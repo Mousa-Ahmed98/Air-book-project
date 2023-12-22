@@ -1,0 +1,107 @@
+nav{
+    background-color: black;
+   padding: 10px;
+}
+a{
+    text-decoration-line: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+    margin-left: 20px;
+    
+}
+a:hover{
+    color:  #ffc107;
+}
+.hoverRegister:hover{
+    background-color: #ffc107;
+}
+.hoverLog:hover{
+    background-color: white;
+}
+li i:hover{
+    background-color: aliceblue;
+}
+
+.containerrr {
+    position: relative;
+    font-family: Arial;
+}
+.containerrr img{
+       width: 100%;
+  }
+  
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.textcolor{
+    color: #571336;
+ }
+ .btnContactHover:hover{
+    background-color:  #571336;
+    color: white;
+ }
+ .pading{
+    padding: 180px 0 100px;
+ }
+.aboutImg{
+    position: relative;
+    margin-top:70px;
+}
+
+.borderYellow{
+    border: 10px solid #ffa903;
+    width: 444px; 
+    height: 459px;
+    position: absolute;
+    top: -5vw;
+    right: -5vw;
+   
+    
+}
+.imgTwo{
+    position: absolute;
+    top: -7vw;
+    right: -7vw;
+    
+}
+
+.backGroundColor
+{
+    background-color: #fbf9f2;
+}
+.flightOption{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 1px 16px 0px rgba(139, 139, 139, 0.16);
+    margin-bottom: 30px;
+    padding-right: 60px;
+   
+}
+.marg{
+    margin-top: 30px;
+    
+}
+.margn{
+    margin-top: 30px;
+}
+.mleft{
+    margin-left: 25px;
+}
+.padding{
+    padding-top: 17px;
+}
+@media only screen and (max-width: 600px) {
+   .textim{
+    display: none;
+   }
+  
+  }
+
