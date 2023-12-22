@@ -98,6 +98,28 @@ li i:hover{
 .padding{
     padding-top: 17px;
 }
+#shadow{
+    box-shadow: 10px 10px #ffa903;
+}
+#shadow:hover{
+    box-shadow: 0 0;
+}
+.divtoggle{
+    background-color: rgb(243, 239, 239);
+    color: #571336;
+    padding: 16px; 
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.minace{
+    display: none;
+    background-color:#571336; ;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+}
+
 @media only screen and (max-width: 600px) {
    .textim{
     display: none;
