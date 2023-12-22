@@ -111,12 +111,13 @@ li i:hover{
     cursor: pointer;
     margin-bottom: 16px;
 }
-.minace{
+#minace,#minace2,#minace3{
     display: none;
     background-color:#571336; ;
     color: white;
     cursor: pointer;
     margin-bottom: 30px;
+    padding: 16px;
     
 }
 
