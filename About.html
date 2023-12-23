@@ -7,23 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-   <nav  class="d-flex justify-content-between  flex-wrap padding" >
-    <div><a href=" "><img src="images/logo.png"></a></div>
-    <div class="padding">
-    <ul class="d-flex ">
-    <li><a href="">Home</a></li>
-    <li><a href=" ">About</a></li>
-    <li><a href=" ">Page</a></li>
-    <li><a href=" ">Blog</a></li>
-    <li><a href=" ">Contact</a></li>
-    <li><button class="btn btn-light hoverRegister">Register</button></li>
-    <li><button class="btn btn-warning hoverLog ">Login</button></li>
-</ul>
-</div>
-</nav>
-
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="images/logo.png">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              
+            </ul>
+            <div class="d-flex"><ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contact</a>
+                  </li>
+              
+              <form >
+                <button class="btn btn-light hoverRegister" type="button">Register</button>
+                <button class="btn btn-warning hoverLog "type="button">Sign</button>
+              </form></div>
+            
+          </div>
+        </div>
+    </nav>
 <section>
     
         <div class="containerrr" >
@@ -84,7 +102,7 @@
                     <div class="margn">
                     <ul>
                         <li>Pre-book your baggage <i class="fa-solid fa-check mleft " ></i></li>
-                        <li>Allowance now and save<i class="fa-solid fa-check mleft " ></i></li>
+                        <li>Allowance now and save up<i class="fa-solid fa-check mleft " ></i></li>
                         <li>90% of baggage charges<i class="fa-solid fa-check mleft " ></i></li>
                     </ul>
                     </div>
@@ -92,7 +110,7 @@
                 </div>
                 <div class=" flightOption">
                     <div>
-                        <img src="images/caricon.png" style="transform: rotate(20deg);" >
+                        <img src="images/caricon.png" >
                     </div>
                     <div class="margn">
                     <span> Service 02</span>
@@ -162,18 +180,105 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet interdum imperdiet ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
             </div>
         </div>
-
-
             </div>
 
-            
-       
         <div class="col-lg-6">
             <img src="images/sectionFlightQues.jpg" id="shadow">
         </div>
     </div>
     </div>
 </section>
+
+<div class="container-fluid my-5 bg-dark">
+   
+    <footer class="text-center text-lg-start text-white bg-dark">
+      <div class="container p-4 pb-0">
+        <section class="">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <img src="images/logo.png">
+                <p class="p-4">
+                  Online to make your journey even more memorable access or meet
+                </p>
+              </div>
+              <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Explore
+              </h6>
+              <p>
+                <a href="">About us</a>
+              </p>
+              <p>
+                <a href="">Travel alerts</a>
+              </p>
+              <p>
+                <a href="">Qatarisation</a>
+              </p>
+              <p>
+                <a href="">Beyond</a>
+              </p>
+              <p>
+                <a href="" >Airways Cargo</a>
+              </p>
+             
+            </div>
+            
+           
+    
+              <hr class="w-100 clearfix d-md-none" />
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Privacy</h6>
+                <p>
+                  <a href="">Airline fees</a>
+                </p>
+                <p>
+                  <a href="" >Airline guides/a>
+                </p>
+                <p>
+                  <a href="" >Low fare tips</a>
+                </p>
+                <p>
+                  <a href="" >Flights</a>
+                </p>
+              </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+             <p><a href=""><i class="fas fa-home mr-3"></i> Egypt , Cario</a></p>
+             <p><a href=""><i class="fas fa-envelope mr-3"></i> info@gmail.com</a></p>
+                <p><a href=""><i class="fas fa-phone mr-3"></i> + 01 234 567 88</a></p>
+                    <p><a href=""><i class="fas fa-print mr-3"></i> + 01 234 567 89</a></p>
+            </div>
+          </div>
+        </section>
+      
+  
+        <hr class="my-3">
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- Facebook -->
+              <a
+                 class="btn btn-outline-light  m-1" >
+                 <i class="fab fa-facebook-f"></i></a>
+  
+              <!-- Twitter -->
+              <a href="" class="btn btn-outline-light btn-floating m-1" ><i class="fab fa-twitter"></i></a>
+  
+              <!-- Google -->
+              <a href="" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-google"></i></a>
+  
+              <!-- Instagram -->
+              <a href="" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+ 
+  </div>
 
 
     <script src="main.js"></script>

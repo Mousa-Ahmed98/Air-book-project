@@ -14,7 +14,7 @@ li{
 a:hover{
     color:  #ffc107;
 }
-.hoverRegister:hover{
+.hoverRegister,.mhoverIcon:hover{
     background-color: #ffc107;
 }
 .hoverLog:hover{
