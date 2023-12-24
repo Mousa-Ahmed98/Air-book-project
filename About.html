@@ -10,16 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <img src="images/logo.png">
+          <a class="navbar-brand"><img src="images/logo.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              
-            </ul>
+            <ul class="navbar-nav me-auto"></ul>
             <div class="d-flex"><ul class="navbar-nav me-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="">Home</a>
@@ -36,7 +34,7 @@
               
               <form >
                 <button class="btn btn-light hoverRegister" type="button">Register</button>
-                <button class="btn btn-warning hoverLog "type="button">Sign</button>
+                <button class="btn btn-warning hoverLog " type="button">Sign</button>
               </form></div>
             
           </div>
@@ -46,6 +44,9 @@
     
         <div class="containerrr" >
         <img src="images/p.jpg" >
+        <div style="background-color: rgba(45, 39, 66, 0.858); position: absolute;top: 10%;width: 100%;height: 600px; max-width: 100%;">
+
+        </div>
         <div class="text">
             <p class="h1">About</p>
             <a href="">home</a>
@@ -71,12 +72,15 @@
              </div>
              <div class="col-lg-1"></div>
              <div class="col-lg-6">
-            <div class="aboutImg">
-                <img src="images/im2.jpg" class="mw-100" >
+             
+           <div class="aboutImg">
+                <img src="images/im2.jpg" class="img-fluid" >
              <div class="borderYellow"></div>
              <img src="images/im1.jpg" class="imgTwo" >
             </div>
-             
+         <!--
+          <img src="images/im2.jpg" >
+        -->
             </div>
             </div>
         </div>
@@ -126,8 +130,6 @@
                     
 
 
-
-
                 </div>
                 <div class=" flightOption">
                     <div>
@@ -152,7 +154,7 @@
 </section>
 
 <section>
-    <div class="container pading">
+    <div class="container marg">
         <div class="row">
             <div class="col-lg-6">
                 <p class="text-warning">ASKED QUESTIONS</p>
@@ -183,7 +185,7 @@
             </div>
 
         <div class="col-lg-6">
-            <img src="images/sectionFlightQues.jpg" id="shadow">
+            <img src="images/sectionFlightQues.jpg" class="img-fluid" id="shadow">
         </div>
     </div>
     </div>
