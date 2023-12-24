@@ -1,0 +1,91 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+    /********************************************/ /*What is auto*/
+}
+header{
+    /* attendant */
+    background-color: rgba(71, 151, 255, 0.3);
+    height: 90vh;
+    background-image: url("images/flight\ attendant.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 100% 90%; */
+    background-size: cover;
+    background-position-x: -700px;    
+    
+}
+.bac-img{
+    background-image: url(images/dream.jpg);
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+#suggest{
+    max-width: 520px;
+}
+.rounded-bottomm{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.rounded-topp{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 221, 221);
+}
+ul{
+    display: flex; 
+}
+ul li{
+    list-style: none;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.rounded-top-left-1 {
+    border-top-left-radius: 1rem;
+}
+.rounded-top-right-1 {
+    border-top-right-radius: 1rem;
+}
+.rounded-1{
+    border-radius: 1rem;
+}
+.m-0{
+    margin: 0;
+}
+
+.bg-c-white-black{
+    background-color: white;
+    color: black;
+}
+
+.bg-c-red-white{
+    background-color: rgb(221, 45, 45);
+    color: white;
+}
+
+.booking:hover{
+    background-color: rgb(209, 44, 44);
+    color: white;
+    cursor: pointer;
+}
+
+i{
+    margin-right:  1rem;
+}
+
+.no-focus-outline:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.ch-bg-on-hover:hover{
+    
+}
