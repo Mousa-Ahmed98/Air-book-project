@@ -23,10 +23,19 @@ a:hover{
 li i:hover{
     background-color: aliceblue;
 }
+.sec{
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
 .containerrr {
     position: relative;
     font-family: Arial;
+    height: 60vh;
+    background-image: url(images/p.jpg);
+    background-position: center;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .containerrr img{
        width: 100%;
