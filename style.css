@@ -5,21 +5,34 @@ body{
     /********************************************/ /*What is auto*/
 }
 header{
-    /* attendant */
     background-color: rgba(71, 151, 255, 0.3);
     height: 90vh;
-    background-image: url("images/flight\ attendant.jpg");
+    background-image: url("flight_woman.jpg");
     background-repeat: no-repeat;
-    /* background-size: 100% 90%; */
     background-size: cover;
-    background-position-x: -700px;    
+    /* background-position-x: -700px;     */
     
+}
+.btn-gold{
+    background-color: #ffc107;
+}
+
+.text-black{
+    color: black;
+}
+
+.text-white{
+    color: white;
 }
 .bac-img{
     background-image: url(images/dream.jpg);
     background-size: cover;
     background-position-y: top;
     background-repeat: no-repeat;
+}
+#specialSection{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 #suggest{
     max-width: 520px;

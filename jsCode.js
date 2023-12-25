@@ -18,7 +18,7 @@ if(localStorage.getItem("flights") != null){
             <h5 class="text-primary m-2">${flights[i].from} To ${flights[i].to}</h5>
             <p class="text-success m-2 mb-3">${flights[i].leavingDate}</p>
             <p class="text-success m-2 p-0">Economy from</p>
-            <p class="text-primary m-2">$ ${flights[i].price}</p>
+            <p class="m-2" style="color: #ffc107"><b>$ ${flights[i].price}</b></p>
         </div>`
         flightsSection.appendChild(element);
     }
