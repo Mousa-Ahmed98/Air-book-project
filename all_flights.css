@@ -1,0 +1,54 @@
+.rounded-bottomm{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.rounded-topp{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bac-img{
+    background-image: url(images/dream.jpg);
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+.col-2-5{
+    width: 23.75%;
+}
+.flight-card{
+
+}
+
+.rounded-top-left-1 {
+    border-top-left-radius: 1rem;
+}
+.rounded-top-right-1 {
+    border-top-right-radius: 1rem;
+}
+.rounded-1{
+    border-radius: 1rem;
+}
+.m-0{
+    margin: 0;
+}
+
+.bg-c-white-black{
+    background-color: white;
+    color: black;
+}
+
+.bg-c-red-white{
+    background-color: rgb(221, 45, 45);
+    color: white;
+}
+
+.no-focus-outline:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
