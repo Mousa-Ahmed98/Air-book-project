@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="icon" href="images/plane icon2.png"
+          type="image/x-icon">
+    <title>Add flight</title>
+    <style>
+        div{
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <input class="form-control" type="text" name="from" id="fromInputText" placeholder="From">
-        <input class="form-control" type="text" name="to" id="toInputText" placeholder="To">
-        <input class="form-control" type="date" name="date" id="depDateInputText" placeholder="Departure date">
-        <input class="form-control" type="number" name="price" id="priceInputText" placeholder="Price">
-        <button class="btn btn-success" onclick="addFlight()">Add flight</button>
+    <div class="container p-5 m-5" style="background-color: rgb(74, 80, 80); align-content: center;">
+        <div class="d-flex flex-column">
+            <div>
+                <input class="form-control" type="text" name="from" id="fromInputText" placeholder="From">
+            </div>
+            <div>
+                <input class="form-control" type="text" name="to" id="toInputText" placeholder="To">
+            </div>
+            <div>
+                <input class="form-control" type="date" name="date" id="depDateInputText" placeholder="Departure date">
+            </div>
+            <div>
+                <input class="form-control" type="number" name="price" id="priceInputText" placeholder="Price">
+            </div>
+            <div class="align-self-center">
+                <button class="btn btn-success" onclick="addFlight()">Add flight</button>
+            </div>
+        </div>
     </div>
 
     <script src="add_flight.js"></script>
