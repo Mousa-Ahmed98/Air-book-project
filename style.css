@@ -6,12 +6,19 @@ body{
 }
 header{
     background-color: rgba(71, 151, 255, 0.3);
+    display: flex;
     height: 90vh;
+    position: relative;
     background-image: url("flight_woman.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position-x: -700px;     */
-    
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top: 20%;
+    left: 10%;
 }
 .btn-gold{
     background-color: #ffc107;
@@ -61,6 +68,9 @@ ul li{
     font-size: 1.1rem;
 }
 
+.clickable:hover{
+    cursor: pointer;
+}
 .rounded-top-left-1 {
     border-top-left-radius: 1rem;
 }
