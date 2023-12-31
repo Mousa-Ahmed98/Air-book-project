@@ -1,5 +1,6 @@
 var flights = [];
 var flightsSection = document.getElementById("flightsSection");
+var allFlightBtn = document.getElementById("allFlights");
 var images = ["images/dubai.jpg", "images/cairo.jpg", "images/france.avif", "images/saudia-arabia.jpg"
 , "images/washington.avif"];
 
@@ -7,7 +8,7 @@ if(localStorage.getItem("flights") != null){
     flights = JSON.parse(localStorage.getItem("flights"));
     for(var i = 0; i < Math.min(4, flights.length); i++){
         var element = document.createElement("div");
-        element.classList.add('d-flex', 'flex-column', 'col-5', 'ch-bg-on-hover', 'border', 'shadow', 'rounded-1', 'm-1', 'p-2', 'align-self-start');
+        element.classList.add('d-flex', 'flex-column', 'col-5', 'clickable', 'ch-bg-on-hover', 'border', 'shadow', 'rounded-1', 'm-1', 'p-2', 'align-self-start');
         element.style.backgroundColor = "white";
         
         element.innerHTML = `<div class="border rounded-topp  bac-img" style="background-image: url(${images[i%5]});
@@ -22,13 +23,13 @@ if(localStorage.getItem("flights") != null){
         </div>`
         flightsSection.appendChild(element);
     }
+
 //<div class="col-12 border rounded p-1  align-self-center"
 // style="background-color: tomato;">View All</div>
     var viewAllDiv = document.createElement("div");
     viewAllDiv.classList.add("col-12", "border", "rounded", "p-1", "align-self-center");
     viewAllDiv.style.backgroundColor = "tomato";
     viewAllDiv.innerText = "View All";
-    //flightsSection.appendChild(viewAllDiv);
 }
 
 
@@ -41,3 +42,8 @@ function changeBg(ths) {
 function resetBg(ths) {
     ths.style.backgroundColor = 'white';
 }
+
+
+allFlightBtn.addEventListener("click",function(){
+    open("all_flights.html", "_self")
+})

@@ -8,7 +8,7 @@ if(localStorage.getItem("flights") != null){
     for(var i = 0; i < flights.length; i++){
 
         var element = document.createElement("div");
-        element.classList.add('col-2-5', 'border', 'rounded-topp', 'rounded-bottomm',
+        element.classList.add('col-2-5', 'border', 'clickable', 'rounded-topp', 'rounded-bottomm',
          'mt-3', 'shadow', 'mr-2', 'p-0','mb-2', 'align-self-start');
         element.style.background = "white";
 
