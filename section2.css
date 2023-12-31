@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+
+section.sec2{
+  background-color: #fbf9f2;
+    padding: 80px;
+    position: relative;
+}
+section.sec2 .head{
+ 
+ margin-bottom: 25px;
+}
+section.sec2 .head h3{
+    color:#ffa903;
+    font-size:1.1em;
+
+}
+
+section.sec2 .head h1{
+    font-size:2.5em;
+    text-transform: capitalize;
+}
+section.sec2 .concon{
+    overflow:hidden ;
+    width: 58%;
+    transform: translate(-5px);
+    height: 250px;
+    margin: auto;
+    
+}
+section.sec2 .container{
+    display: flex;
+    flex-direction: row;
+    width: 300%;
+}
+section.sec2 .container .cart{
+    display: inline-block;
+    width: 300px !important;
+    height: 250px;
+    margin-right: 20px;
+    padding: 5px 15px 25px 15px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px lightgray;
+
+}
+section.sec2 .container .cart h3{
+    color: #ca96b1;
+    
+}
+section.sec2 .container .cart h2{
+    color: #571336;
+}
+section.sec2 .container .cart .paracont{
+    color: lightgray;
+}
+section.sec2 .container .flexcont{
+   
+    display: flex;
+    flex-direction: row;
+    
+
+}
+section.sec2 .container .flexcont .iconcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+    section.sec2 .container .cart {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    section.sec2 .container .cart {
+      width: 100%;
+    }
+  }
