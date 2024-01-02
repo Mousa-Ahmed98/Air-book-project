@@ -108,3 +108,11 @@ i{
     outline: none !important;
     box-shadow: none !important;
 }
+
+.col-5-5{
+    width: 50%;
+}
+
+.m-1-1{
+    margin: 1px;
+}

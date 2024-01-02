@@ -12,22 +12,33 @@
         div{
             padding: 1rem;
         }
+        input:focus{
+            border-color: grey;
+        }
     </style>
 </head>
 <body>
     <div class="container p-5 m-5" style="background-color: rgb(74, 80, 80); align-content: center;">
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column rounded-1">
             <div>
-                <input class="form-control" type="text" name="from" id="fromInputText" placeholder="From">
+                <label for="fromInputText" style="color: orange;">From</label>
+                <input class="form-control" type="text" name="from" id="fromInputText" placeholder="Cairo">
             </div>
             <div>
-                <input class="form-control" type="text" name="to" id="toInputText" placeholder="To">
+                <label for="toInputText" style="color: orange;">To</label>
+                <input class="form-control" type="text" name="to" id="toInputText" placeholder="Qatar">
             </div>
             <div>
+                <label for="depDateInputText" style="color: orange;">Departure date</label>
                 <input class="form-control" type="date" name="date" id="depDateInputText" placeholder="Departure date">
             </div>
             <div>
-                <input class="form-control" type="number" name="price" id="priceInputText" placeholder="Price">
+                <label for="retDateInputText" style="color: orange;">Return date</label>
+                <input class="form-control" type="date" name="date" id="retDateInputText" placeholder="Departure date">
+            </div>  
+            <div>
+                <label for="priceInputText" style="color: orange;">Price</label>
+                <input class="form-control" type="number" name="price" id="priceInputText" placeholder="100$">
             </div>
             <div class="align-self-center">
                 <button class="btn btn-success" onclick="addFlight()">Add flight</button>
