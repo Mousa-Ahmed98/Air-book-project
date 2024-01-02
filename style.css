@@ -1,9 +1,7 @@
-body{
+/* body{
     padding: 0;
     margin: 0;
-    
-    /********************************************/ /*What is auto*/
-}
+} */
 header{
     background-color: rgba(71, 151, 255, 0.3);
     display: flex;
@@ -59,14 +57,7 @@ main{
     align-items: center;
     background-color: rgb(230, 221, 221);
 }
-ul{
-    display: flex; 
-}
-ul li{
-    list-style: none;
-    padding: 12px;
-    font-size: 1.1rem;
-}
+
 
 .clickable:hover{
     cursor: pointer;
@@ -98,10 +89,6 @@ ul li{
     background-color: rgb(209, 44, 44);
     color: white;
     cursor: pointer;
-}
-
-i{
-    margin-right:  1rem;
 }
 
 .no-focus-outline:focus{

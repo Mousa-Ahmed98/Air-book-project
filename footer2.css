@@ -1,0 +1,23 @@
+footer.foot2{
+    background-color: #13171d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 20px 0;
+}
+footer.foot2 .imgcont{
+
+}
+footer.foot2 .wordscont{
+ color: white;
+ font-size: 1em;
+ margin-top: 10px; 
+
+}
+footer.foot2 .wordscont span{
+    color: #ffa903;
+    font-size: 1em;
+
+}
