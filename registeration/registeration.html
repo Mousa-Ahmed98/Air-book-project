@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ffrm.css">
+    <title>Registeration</title>
+    <link rel="icon" type="image/x-icon" href="../images/plane icon2.png">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form" method="get">
+           <a href=""><img src="logo.png"><h1>Geair</h1> </a> 
+            
+    
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+    
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+            <span id="errorMessage" class="error-message"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="errorMessage3" ></span>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <label for="confirmPassword">Repeat Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required onblur="checkPasswordMatch()">
+            <span id="passwordMatchMessage" class="error-message"></span><br>
+            <span id="errorMessage2" class="error-message"></span>
+    
+        
+            <!-- <input type="submit" name="register" value="Register"> -->
+        </form>
+
+        <p style="font-size: 1rem; color: rgb(105, 105, 182); cursor: pointer;" id="login">Signin instead?</p>
+
+        <button onclick="validate()" class="bott" style="color: black !important;">Register</button>
+    </div>
+    <script src="main.js">
+        
+       
+  
+</script>
+
+   
+    
+</body>
+</html>

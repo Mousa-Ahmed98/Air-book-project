@@ -1,3 +1,9 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+div, h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans', sans-serif;
+}
 nav{
     background-color: black;
    padding: 10px;
@@ -12,21 +18,36 @@ li{
     
 }
 a:hover{
-    color:  #ffc107;
+    color:  #ffc107 !important;
 }
-.mhoverIcon:hover{
+.mhoverIcon,.hoverRegister:hover{
     background-color: #ffc107;
 }
+
 .hoverLog:hover{
     background-color: white;
 }
 li i:hover{
     background-color: aliceblue;
 }
-
+.sec{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#btnScroll{
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+    display: none;
+}
 .containerrr {
     position: relative;
     font-family: Arial;
+    height: 60vh;
+    background-image: url(images/p.jpg);
+    background-position: center;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .containerrr img{
        width: 100%;
@@ -49,7 +70,7 @@ li i:hover{
     color: white;
  }
  .pading{
-    padding: 120px 0 100px;
+    padding: 180px 0 100px;
  }
 .aboutImg{
     position: relative;
@@ -90,10 +111,14 @@ li i:hover{
     
 }
 .margn{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .mleft{
     margin-left: 25px;
+    
+}
+.color{
+    color: #571336;
 }
 .padding{
     padding-top: 17px;
@@ -120,11 +145,17 @@ li i:hover{
     padding: 16px;
     
 }
-
-@media only screen and (max-width: 600px) {
-   .textim{
-    display: none;
-   }
-  
-  }
-
+.rotateImg
+{
+    transition: transform 1s;
+}
+.rotateImg:hover{
+    transform: rotate(360deg);
+}
+#btnScroll{
+    width: 55px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    
+}

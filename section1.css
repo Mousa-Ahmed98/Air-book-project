@@ -1,0 +1,130 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+section.sec1{
+  
+    padding: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.makerev{
+    margin-top: 10px;
+    background-color: #ffc107;
+}
+section.sec1 .head{
+ text-align: center;  
+ margin-bottom: 25px;
+}
+section.sec1 .head h3{
+    color:#ffa903;
+    font-size:1.3em;
+
+}
+section.sec1 .head h1{
+    font-size:2.5em;
+    text-transform: capitalize;
+}
+
+section.sec1 .containerr{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  
+}
+section.sec1 .containerr .bigcont{
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 80vh;
+}
+section.sec1 .containerr .big{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    color: white;
+    background-image: url("pr_resource/joshua-earle--87JyMb9ZfU-unsplash.jpg");
+    background-size:cover;
+   transition: transform .4s ease-in;
+   
+}
+section.sec1 .containerr .big:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+section.sec1 .containerr .big .paracont{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+section.sec1 .containerr .big .headcont{
+   width: 80%;
+}
+section.sec1 .containerr .smallcont  {
+    width: 47%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+section.sec1 .containerr .smallcont h3{
+    font-size: 1.4em;
+}
+section.sec1 .containerr .smallcont .small {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    }
+section.sec1 .containerr .smallcont .small .paracont{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    color:lightgray;
+}
+section.sec1 .containerr .smallcont .small .headcont{
+    box-sizing: border-box;
+   width: 60%;
+   padding-left: 10px;
+}
+section.sec1 .containerr .smallcont .small .imgcont{
+    overflow: hidden;
+    width: 170px;
+   height: 150px;
+   border-radius: 6px;
+}
+section.sec1 .containerr .smallcont .small img{
+   width: 100%;
+   height: 100%;
+   
+   transition: transform .4s ease-in;
+}
+section.sec1 .containerr .smallcont .small img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 800px) {
+    section.sec1 .containerr .bigcont{
+      display: none;
+    }
+    section.sec1 .containerr .smallcont  {
+        width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    }
+  }
+  @media only screen and (max-width: 400px)
+  {
+    section.sec1 .containerr .smallcont .small .paracont,section.sec1 .containerr .smallcont .small .headcont{
+        display: none;
+    }
+  }

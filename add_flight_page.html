@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="icon" href="images/plane icon2.png"
+          type="image/x-icon">
+    <title>Add flight</title>
+    <style>
+        body{
+          font-family: 'Noto Sans', sans-serif;
+        }
+        div{
+            padding: 1rem;
+        }
+        input:focus{
+            border-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-5 m-5" style="background-color: rgb(74, 80, 80); align-content: center;">
+        <div class="d-flex flex-column rounded-1">
+            <div>
+                <label for="fromInputText" style="color: orange;">From</label>
+                <input class="form-control" type="text" name="from" id="fromInputText" placeholder="Cairo">
+            </div>
+            <div>
+                <label for="toInputText" style="color: orange;">To</label>
+                <input class="form-control" type="text" name="to" id="toInputText" placeholder="Qatar">
+            </div>
+            <div>
+                <label for="depDateInputText" style="color: orange;">Departure date</label>
+                <input class="form-control" type="date" name="date" id="depDateInputText" placeholder="Departure date">
+            </div>
+            <div>
+                <label for="retDateInputText" style="color: orange;">Return date</label>
+                <input class="form-control" type="date" name="date" id="retDateInputText" placeholder="Departure date">
+            </div>  
+            <div>
+                <label for="priceInputText" style="color: orange;">Price</label>
+                <input class="form-control" type="number" name="price" id="priceInputText" placeholder="100$">
+            </div>
+            <div class="align-self-center">
+                <button class="btn btn-success" onclick="addFlight()">Add flight</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="add_flight.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+section.sec3 .container{
+    background-color: #476ce4;
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width: 768px;
+    position: relative;
+  }
+  section.sec3 .container .user{
+    display: flex;
+    justify-content: center;
+  }
+  section.sec3 .container .user img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  section.sec3 .rev{
+    line-height: 28px;
+    text-align: justify;
+  }
+  section.sec3 .container .progress-bar{
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 10px;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+  }
+  section.sec3 button{
+    background-color: #ffa903;
+    
+    border-radius: 5px;
+    outline-style: none;
+    border-style: none;
+    padding: 10px 7px;
+
+  }
+  section.sec3 button:hover{
+    cursor: pointer;
+    opacity: .7;
+
+  }
+  section.sec3 a{
+   margin-left: 45%;
+   transform: translate(-50%);
+   
+  }
+  @keyframes grow {
+    0%{
+        transform: scaleX(0);
+    }
+  }

@@ -1,0 +1,533 @@
+body
+{
+    margin: 0;
+    background-color: #fbf9f2;
+}
+#imgDiv{
+    background-image: url("../images/air_plane4.jpg");
+    height: 70vh;
+    background-position-y: -100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width: 1500px) {
+    #imgDiv{
+        background-position-y: -100vh;
+    }
+}
+@media (max-width: 1100px) {
+    #imgDiv{
+        background-position-y: -50vh;
+    }
+}
+@media (max-width: 900px) {
+    #imgDiv{
+        background-position-y: -30vh;
+    }
+}
+@media (max-width: 600px) {
+    #imgDiv{
+        background-position-y: -10vh;
+    }
+}
+
+
+
+
+.img1
+{
+    height: 500px;
+    width: 100%;
+}
+h1
+{
+  position: absolute;
+   top: 20%;
+   left: 40%;
+   color:#57112f;
+}
+.title
+{
+    display: flex;
+    color: #57112f;
+    flex-wrap: wrap;
+}
+.icon1
+{
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+}
+.icon2
+{
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 32px;
+}
+.icon3
+{
+    width: 15px;
+}
+h3
+{
+    color: #57112f;
+}
+h2
+{
+    background-color: #57112f;
+    color: white;
+    padding: 4px 100px;
+    display: inline-block;
+    margin-left: 3px;
+}
+aside
+{
+    color: #57112f;
+}
+.borderleft
+{
+    border-left: 10px;
+}
+a
+{
+    text-decoration: none;
+    color: #57112f;
+}
+ul
+{
+    list-style-type: none;
+}
+.insidecontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container1
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+span
+{
+    width: 100px;
+}
+.paragraph
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+h4
+{
+    width: 200px;
+}
+#select
+{
+    height: 40px;
+    color: #57112f;
+    background-color: #ffa903;
+    padding:0px 10px;
+    margin: 20px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.basicdate
+{
+    background-color: #ffa903;
+    display: inline-block;
+    padding: 3px;
+    color:white;
+}
+.detailofdate
+{
+    color: #57112f;
+}
+.totaldetail
+{
+    display: flex;
+}
+.hr
+{
+    border-left: 2px solid gray;
+    height: 120px;
+    margin-right: 3px;
+}
+.alldetail
+{
+    flex-wrap: wrap;
+}
+.detailandimage
+{
+    display: flex;
+    background-color: #ebebee;
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #57112f;
+}
+.center
+{
+    text-align: center;
+    color: #57112f;
+}
+.dash
+{
+    border: 1px dashed gray;
+}
+.details
+{
+    border:1px solid #ebebee;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.leftborderdash
+{
+    border-left: 1px dashed gray;
+    height: 50px;
+    margin-right: 40px;
+}
+details
+{
+    display: flex;
+}
+.all
+{
+    display: flex;
+}
+.differentappointment
+{
+    display: block;
+    flex-wrap: wrap;
+}
+.borderbox
+{
+    display: flex;
+    border: 1px solid white;
+    background-color: #ebebee;
+    margin-top: 10px;
+    height: 60px;
+    align-items: center;
+}
+
+.form 
+{
+    align-items: center;
+}
+/* second page */
+
+.icons
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    padding: 5px;
+   
+}
+.personalinfo
+{
+    color: #57112f;
+}
+fieldset
+{
+    border-radius: 5px;
+    width: 100%;
+}
+.travellers
+{
+    display: flex;
+}
+#firstselect
+{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+}
+#secndselect
+{
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+}
+#thirdselect
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+#firstname,#lastname
+{
+    width: 38%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: #57112f;
+}
+.names
+{
+    margin-top: 10px;
+    display:flex; 
+}
+
+.secndform
+{
+    width: 100%;
+}
+select
+{
+    color: #57112f;
+}
+input[type="radio"]
+{
+    display: none;
+}
+.label1
+{
+    padding: 10px;
+    background-color: #ebebee;
+    margin-left: 10px;
+    height: 30px;
+    display: inline-block;
+    
+}
+input[type="radio"]:checked + label
+{
+    border: 1px solid gray;
+}
+.nationalityandcall,.dateandpost,.emailandflyer
+{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.nationality,.date,.email
+{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.call,.post,.flyer
+{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    align-items: center;
+}
+#phone,#date1,#post1,#flyer1,#email1
+{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: #57112f;
+}
+#selectmeal,#selectwheel
+{
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.label2
+{
+    font-size: 20px;
+    color: #57112f;
+}
+.insidcontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-around;
+}
+.rightside
+{
+    width: 30%;
+}
+.leftside
+{
+    border: 1px solid #ebebee;
+    border-radius: 5px;
+    padding: 2px;
+}
+.p1
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p1 p
+{
+    width: 20px;
+   
+}
+.p p
+{
+    width: 20px;
+    
+}
+.p
+{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+li
+{
+   padding: 10px;
+   text-align: center;
+}
+span
+{
+    margin-left: 7px;
+}
+#code
+{
+    width: 70%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 15px;
+    color: #57112f;
+}
+.buttons button
+{
+    width: 40%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.detailAmount1
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebee;
+    border-radius: 2px;
+}
+.paynow
+{
+    background-color: #57112f;
+    width: 100%;
+    color: #ebebee;
+    height: 45px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0px solid #ebebee;
+    cursor: pointer;
+}
+.paynow:hover{
+    background-color: #692542;
+}
+b
+{
+    font-size: 20px ;
+}
+.detailAmount1 h4
+{
+    padding: 5px;
+    width: 70px;
+}
+.detailAmount2,.detailAmount3,.detailAmount4
+{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.waypaymoney
+{
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+}
+.waypaymoney1
+{
+    width: 100%;
+    height: 50px;
+}
+.waypaymoney2
+{
+    width: 100%;
+    height: 45px;
+}
+.discount
+{
+   display: flex;
+   align-items: normal;
+   flex-wrap: wrap;
+}
+.displayError
+{
+    display: flex;
+    flex-wrap: wrap;
+    color: red;
+    font-size: 15px;
+}
+#errorEmail,#errorPhone,#errorpostcode,#errorflyernum
+{
+    color: red;
+}
+#errordiscount
+{
+    display: inline;
+    color: red;
+}
+#FirstNameCorrect,#LastNameCorrect,#EmailCorrect,#PhoneCorrect,#PostCodeCorrect,#FlyerNumCorrect,#DiscountCorrect
+{
+    color: green;
+}
+@media only screen and (max-width: 600px)
+{
+    .details
+    {
+        padding: 15px;
+    }
+    .detailandimage
+    {
+        height: 200px;
+    }
+    .hr
+    {
+        height: 200px;
+    }
+    .buttons button
+    {
+        width: 65%;
+        height: 60px;
+        padding: 2px;
+    }
+
+}
+@media only screen and (min-width: 601px)
+{
+    .details
+    {
+        padding-left: 15px;
+    }
+    
+}
+@media only screen and (min-width: 618px)
+{
+    .p,.p1
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
