@@ -1,11 +1,31 @@
-/* body{
+body{
     padding: 0;
     margin: 0;
-} */
+    font-family: 'Noto Sans', sans-serif;
+}
+nav{
+    background-color: black;
+   padding: 10px;
+}
+p, h1, h2, h3, h4, h5, h6, input{
+    font-family: 'Noto Sans', sans-serif;
+}
+a{
+    text-decoration-line: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+    margin-left: 20px;
+    
+}
+a:hover{
+    color:  #ffc107 !important;
+}
 header{
     background-color: rgba(71, 151, 255, 0.3);
     display: flex;
-    height: 90vh;
+    height: 80vh;
     position: relative;
     background-image: url("flight_woman.jpg");
     background-repeat: no-repeat;

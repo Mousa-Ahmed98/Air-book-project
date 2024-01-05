@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
@@ -13,6 +12,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/plane icon2.png"
           type="image/x-icon">
     <title>Home page</title>
@@ -21,10 +25,51 @@
     <link rel="stylesheet" href="section1.css" />
     <link rel="stylesheet" href="section2.css" />
     <link rel="stylesheet" href="section3.css">
+
+    
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top"  >
+        <div class="container-fluid">
+          
+            <div>
+              <img src="about/images/logo.png"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
+          <div class="collapse navbar-collapse" style="" id="mynavbar">
+            
+            <div class="d-flex"><ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link" href="" style="color: #ffc107;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about/About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="all_flights.html">Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about/About.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="add_flight_page.html">Admin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="logout">Log out</a>
+                </li>
+              <input type="hidden" name="flightID" id="flightId">
+              <form >
+                <button id="registerBtn" class="btn btn-light hoverRegister" type="button">Register</button>
+                <button id="loginBtn" class="btn btn-warning hoverLog " type="button">Sign</button>
+              </form></div>
+            
+          </div>
+        </div>
+    </nav>
     <header>
         <div class="content d-flex flex-column">
             <h1 class="d-flex" style="color: white; font-size: 2.73vw;">A Lifetime of Discount? It's Genius.</h1>
@@ -88,9 +133,9 @@
             </div>
             <div class="" style="height: 10vh;"></div>
 
-            <div class="d-flex flex-row col-12 p-0 m-0 mb- align-items-center">
+            <div class="d-flex col-12 flex-column flex-md-row flex-sm-column col-sm-12 col-md-12   p-0 m-0 mb- align-items-center">
                 <!-- The big image -->
-                <div class="d-flex col-6 mt-2 p-2 ch-bg-on-hover align-self-start clickable" style="display: flex; flex-direction: column;">
+                <div class="d-flex col-sm-12 col-md-6  mt-2 p-2 ch-bg-on-hover align-self-start clickable" style="display: flex; flex-direction: column;">
                     <div class="border rounded-topp shadow bac-img"
                         style="background-image: url(images/dubai.jpg); flex-grow: 3; height: 68vh;">
                         <!-- <img id="suggest" class="border rounded-topp m-0" src="images/dream.jpg" alt=""> -->
@@ -104,8 +149,8 @@
                 </div>
 
                 <!-- //////////////////////////// -->
-                <div class="d-flex flex-column align-items-center col-6 justify-content-center">
-                    <div id="flightsSection" class="d-flex flex-row mt-2 col-12" style="flex-wrap: wrap;">
+                <div class="d-flex flex-column align-items-center col-md-6 col-sm-12 justify-content-center">
+                    <div id="flightsSection" class="d-none d-md-flex flex-row mt-2 col-12 flex-wrap " style="">
                     
                     </div>
                     <button id="allFlights" class="col-9 p-2 m-2 ml-4
@@ -161,7 +206,7 @@
       <button class="makerev">make your own review</button>
     </a>
     <!-- <button class="save">save changes</button> -->
-    <div class="container">
+    <div class="container" style="background-color: rgb(14, 136, 136)">
       <div class="progress-bar"></div>
       <p class="rev">
         i like to visit this web site very much to sd
@@ -264,7 +309,7 @@
       </div>
 
       <div class="smallcont">
-        <div class="small">
+        <div class="small  my-1">
           <div class="imgcont">
             <img
               src="pr_resource/art-rachen-lBjqCsOGjx0-unsplash.jpg"
@@ -286,7 +331,7 @@
           </div>
         </div>
         <hr />
-        <div class="small">
+        <div class="small  my-1">
           <div class="imgcont">
             <img
               src="pr_resource/artur-aldyrkhanov-QksucEmALuQ-unsplash.jpg"
@@ -308,7 +353,7 @@
           </div>
         </div>
         <hr />
-        <div class="small">
+        <div class="small my-1">
           <div class="imgcont">
             <img
               src="pr_resource/patrick-robert-doyle-2POWJYKXM5Q-unsplash.jpg"

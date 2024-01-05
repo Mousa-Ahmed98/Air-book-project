@@ -27,12 +27,14 @@ if(localStorage.getItem("flights") != null){
             element.classList.add('col-2-5', 'border', 'clickable', 'rounded-topp', 'rounded-bottomm',
             'mt-3', 'shadow', 'mr-2', 'p-0','mb-2', 'align-self-start');
             element.style.background = "white";
+            
 
             element.innerHTML = `<div class="border rounded-topp  bac-img" style="background-image: 
-            url(${images[i%5]}); height: 27vh;"></div>
+            url(${images[i%5]}); height: 27vh;" onclick="setSelectedFlightId(${i})"></div>
             <h5 class="text-primary m-2">${flights[i].from} To ${flights[i].to}</h5>
             <p class="text-success m-2 mb-3">${flights[i].leavingDate} ${flights[i].returnDate}</p>
             <p class="text-success m-2 p-0">Economy from</p>
+            
             <p class="text-primary m-2">$ ${flights[i].price}</p>`
             flightsDiv.appendChild(element);
         }
@@ -54,7 +56,7 @@ function checkFlight(flight){
 
     var searchFlightRetDate = new Date(searchFlight.returnDate);
     var flightRetDate = new Date(flight.returnDate);
-    if(flight.from == searchFlight.from && flight.to == searchFlight.to){
+    if(flight.from.toLowerCase() == searchFlight.from.toLowerCase() && flight.to.toLowerCase() == searchFlight.to.toLowerCase()){
 
     }
     else{
@@ -82,4 +84,10 @@ function checkFlight(flight){
         }
     }
     return true;
+}
+
+function setSelectedFlightId(id){
+    
+    localStorage.setItem("selectedFlightID", id);
+    open("../booking/pages/index2.html", "_blank");
 }

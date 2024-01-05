@@ -1,5 +1,7 @@
 
-
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
 section.sec2{
   background-color: #fbf9f2;
     padding: 80px;
