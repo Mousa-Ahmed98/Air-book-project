@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="bigcontainer">
+        <div id="imgDiv">
+            <!-- <img src="../images/air_plane.jpg" class="img1"> -->
+        </div>
+        <!-- <img src="../images/pexels-pixabay-221307.jpg" class="img1"> -->
+        <!-- <h1>Booking List</h1> -->
+        <div class="insidcontainer">
+            <form action="index1.html" id="basicform">
+                <!-- <input type="button" onclick="storeRegistrationForm()" value="pay now"> -->
+                <div class="leftside">
+                    <div class="personalinfo">
+                        <h2>
+                            <img src="../images/perso.jpg" class="icons">
+                            Passenger 1: Ms (Primary Contact)
+                        </h2>
+                        <form>
+                            <div class="trpayBtnavellers">
+                                <img src="../images/perso.jpg" class="icons">
+                                <fieldset>
+                                    <legend>Select Travellers from your Favourties List</legend>
+                                    <select id="firstselect">
+                                        <option>Select One</option>
+                                        <option>Select Two</option>
+                                        <option>Select Three</option>
+                                        <option>Select Four</option>
+                                        <option>Select Five</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                        </form>
+                        <div class="names">
+                            <img src="../images/perso.jpg" class="icons">
+                            <form class="secndform">
+                                <select id="secndselect">
+                                    <option>Mr.</option>
+                                    <option>Mrs.</option>
+                                    <option>Ms.</option>
+                                    <option>Others</option>
+                                </select>
+                                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                                <div class="displayError">
+                                    <span id="errorFirstName"></span>
+                                    <span id="FirstNameCorrect"></span>
+                                    <span id="errorLastName"></span>
+                                    <span id="LastNameCorrect"></span>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <h3>Select Your Gender*</h3>
+                            <form id="gender">
+                                <input type="radio" name="gender" id="female" value="female" checked>
+                                <label class="label1" for="female">
+                                    <img src="../images/girl.png" class="icons">
+                                    Female
+                                </label>
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label class="label1" for="male">
+                                    <img src="../images/boy.png" class="icons">
+                                    Male
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="nationalityandcall" style="align-items: center;">
+                        <div class="nationality">
+                            <img src="../images/citizenship.png" class="icons">
+                            <fieldset>
+                                <legend>Nationality</legend>
+                                <select id="thirdselect">
+                                    <option>Bangladesh</option>
+                                    <option>United Status</option>
+                                    <option>Dubai</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>Australia</option>
+                                    <option>South Africa</option>
+                                    <option>Pakistan</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="call">
+                            <img src="../images/phone-call.png" class="icons">
+                            <input type="text" name="phone" id="phone" placeholder="Mobile Number">
+                            <span id="errorPhone"></span>
+                            <span id="PhoneCorrect"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="dateandpost" style="align-items: center;">
+                        <div class="date">
+                            <img src="../images/calendar.png" class="icons">
+                            <fieldset>
+                                <legend>Date Of Birth</legend>
+                                <input type="date" name="date1" id="date1">
+                                
+                            </fieldset>
+                        </div>
+                        <div class="post">
+                            <img src="../images/web.png" class="icons">
+                            <input type="text" name="post1" id="post1" placeholder="Post Code">
+                            <span id="errorpostcode"></span>
+                            <span id="PostCodeCorrect"></span>
+                        </div>
+                    </div>
+                    <div class="emailandflyer" style="align-items: center;">
+                        <div class="email">
+                            <img src="../images/email.png" class="icons">
+                            <fieldset>
+                                <legend>Your Email</legend>
+                                <input type="email" name="email1" id="email1" placeholder="youinfo@gmail.com">
+                                <span id="errorEmail"></span>
+                                <span id="EmailCorrect"></span>
+                            </fieldset>
+                        </div>
+                        <div class="flyer">
+                            <img src="../images/star.png" class="icons">
+                            <input type="text" name="flyer1" id="flyer1" placeholder="Flyer Number">
+                            <span id="errorflyernum"></span>
+                            <span id="FlyerNumCorrect"></span>
+                        </div>
+                    </div>
+        
+                    <select id="selectmeal">
+                        <option>Select Meal Type(Optional)</option>
+                        <option>Select Meal Type(Optional)</option>
+                        <option>Select Meal Type(Optional)</option>
+                        <option>Select Meal Type(Optional)</option>
+                    </select>
+                    <select id="selectwheel">
+                        <option>Request Wheelchair(Optional)</option>
+                        <option>Request Wheelchair(Optional)</option>
+                        <option>Request Wheelchair(Optional)</option>
+                        <option>Request Wheelchair(Optional)</option>
+                    </select>
+                    <input type="checkbox" name="check1" id="check1">
+                    <label for="check1" class="label2">Add This Person To Passenger Quick Pick List</label>
+                    
+                </div>
+                
+            </form>
+            <div class="rightside">
+                <h2>Booking Info</h2>
+                <div class="p">
+                    <div class="p1">
+                        <img src="../images/booking_icon01.jpg" class="icon1">
+                        <p id="departureCountry">Dubai</p>
+                        <!-- <p>12:0(DEK) Dubai</p> -->
+                    </div>
+                    <p id="arrivalCountry">Istanbul</p>
+                </div>
+                <hr>
+                <h3>Select Discount Option</h3>
+                <p class="dash"></p>
+                
+
+                <div class="discount">
+                    <img src="../images/h.png" class="icons">
+                    <input type="text" name="code" id="code" placeholder="Enter Code">
+                    <button class="movebtn"><img src="../images/yes-png-39564.png" class="icons"></button>
+                </div>
+                <span id="errordiscount"></span>
+                <span id="DiscountCorrect"></span>
+                <hr>
+                <h3>Your Preferred Bank</h3>
+                <p class="dash"></p>
+                <div class="buttons">
+                    <button><img src="../images/PayPal-Logo.png" class="waypaymoney"></button>
+                    <button><img src="../images/Visa_Inc._logo.svg.png" class="waypaymoney"></button>
+                    <button><img src="../images/Mastercard-Logo.png" class="waypaymoney"></button>
+                    <button><img src="../images/download.png" class="waypaymoney2"></button>
+                    <button><img src="../images/EBay_former_logo.svg.png" class="waypaymoney"></button>
+                    <button><img src="../images/western-union-logo-vector-1.svg" class="waypaymoney1"></button>
+                </div>
+                <hr>
+                <h3>Your Price Summary</h3>
+                <p class="dash"></p>
+                <div>
+                    <div class="detailAmount1">
+                        <h4>Details</h4>
+                        <h4>Amount</h4>
+                    </div>
+                    <div class="detailAmount2">
+                        <div>
+                            <p>Adult x1</p>
+                            <p>Tax x1<p>
+                        </div>
+                        <div>
+                            <p>1,056$</p>
+                            <p>35$</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detailAmount3">
+                        <div>
+                            <p>Total Airfare:</p>
+                            <p>Discount</p>
+                        </div>
+                        <div>
+                            <p>1,091$</p4>
+                            <p>-110$</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detailAmount4">
+                        <div><p>Total Payable</p></div>
+                        <div><p>981.00$</p></div>
+                    </div>
+                    <button id="payBtn" class="paynow" onclick="storeRegistrationForm()">Pay now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

@@ -1,8 +1,8 @@
-
 var flights = [];
 var flightsSection = document.getElementById("flightsSection");
 var allFlightBtn = document.getElementById("allFlights");
 var showFlightsBtn = document.getElementById("showFlightsBtn");
+var logout = document.getElementById("logout");
 var defaultFlights = [
     {
         from: "Egypt", to: "Saudia Arabia", leavingDate: "2024-01-01"
@@ -36,7 +36,7 @@ else{
 
 for (var i = 0; i < Math.min(4, flights.length); i++) {
     var element = document.createElement("div");
-    element.classList.add('d-flex', 'flex-column', 'col-5', 'clickable', 'ch-bg-on-hover',
+    element.classList.add('d-flex', 'flex-column', 'col-md-5','col-sm-5', 'clickable', 'ch-bg-on-hover',
      'border', 'shadow', 'rounded-1', 'm-1', 'p-2', 'align-self-start');
     element.style.backgroundColor = "white";
 
@@ -77,10 +77,9 @@ allFlightBtn.addEventListener("click", function () {
 });
 
 showFlightsBtn.addEventListener("click", function () {
-    alert("");
     var searchFlight = {
-        "from": document.getElementById("fromSearchInput").value,
-        "to": document.getElementById("toSearchInput").value,
+        "from": document.getElementById("fromSearchInput").value.toLowerCase(),
+        "to": document.getElementById("toSearchInput").value.toLowerCase(),
         "departureDate": document.getElementById("depDateSearchInput").value,
         "returnDate": document.getElementById("retDateSearchInput").value,
     }
@@ -91,6 +90,36 @@ showFlightsBtn.addEventListener("click", function () {
     localStorage.setItem("searchFlight", JSON.stringify(searchFlight))
     console.log(JSON.parse(localStorage.getItem("searchFlight")));
 
-    // open("search_page.html", "_blank",);
+    open("search_page.html", "_self");
 });
 
+var loginBtn = document.getElementById("loginBtn");
+var registerBtn = document.getElementById("registerBtn");
+registerBtn.addEventListener("click", function(){
+    open("registeration/registeration.html", "_self");
+});
+
+loginBtn.addEventListener("click", function(){
+    open("registeration/login/login.html", "_self");
+});
+
+console.log(localStorage.getItem("isUserLoggedIn"))
+if(localStorage.getItem("isUserLoggedIn") === "true"){  
+    
+    loginBtn.style.display = "none";
+    registerBtn.style.display = "none";
+    logout.style.display = "flex";
+}
+else{
+    loginBtn.style.display = "inline";
+    registerBtn.style.display = "inline";
+    logout.style.display = "none";
+    
+}
+
+logout.addEventListener("click", function(){
+    localStorage.setItem("isUserLoggedIn", "false");
+    loginBtn.style.display = "inline";
+    registerBtn.style.display = "inline";
+    logout.style.display = "none";
+});

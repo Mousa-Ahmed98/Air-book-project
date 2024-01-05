@@ -1,8 +1,15 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
 section.sec1{
   
     padding: 80px;
     font-family: 'Times New Roman', Times, serif;
     
+}
+.makerev{
+    margin-top: 10px;
+    background-color: #ffc107;
 }
 section.sec1 .head{
  text-align: center;  
