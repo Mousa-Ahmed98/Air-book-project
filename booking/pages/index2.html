@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <!-- Add this in your HTML to create a Bootstrap modal with a unique ID -->
+
+    
+      
     <div class="bigcontainer">
         <div id="imgDiv">
             <!-- <img src="../images/air_plane.jpg" class="img1"> -->
@@ -19,8 +25,7 @@
                 <div class="leftside">
                     <div class="personalinfo">
                         <h2>
-                            <img src="../images/perso.jpg" class="icons">
-                            Passenger 1: Ms (Primary Contact)
+                            Passenger Information
                         </h2>
                         <form>
                             <div class="trpayBtnavellers">
@@ -61,21 +66,23 @@
                             <form id="gender">
                                 <input type="radio" name="gender" id="female" value="female" checked>
                                 <label class="label1" for="female">
-                                    <img src="../images/girl.png" class="icons">
+                                    <img src="../images/girl.png" class="gender-icons">
                                     Female
                                 </label>
                                 <input type="radio" name="gender" id="male" value="male">
                                 <label class="label1" for="male">
-                                    <img src="../images/boy.png" class="icons">
+                                    <img src="../images/boy.png" class="gender-icons">
                                     Male
                                 </label>
                             </form>
                         </div>
                     </div>
-                    <div class="nationalityandcall" style="align-items: center;">
+                    <div>
+                        <img src="../images/citizenship.png" class="icons">
+                    </div>
+                    <div class="nationalityandcall" style="margin: auto; display: flex; align-items: center;">
                         <div class="nationality">
-                            <img src="../images/citizenship.png" class="icons">
-                            <fieldset>
+                            <fieldset style="display: inline-block;">
                                 <legend>Nationality</legend>
                                 <select id="thirdselect">
                                     <option>Bangladesh</option>
@@ -89,32 +96,35 @@
                             </fieldset>
                         </div>
                         <div class="call">
-                            <img src="../images/phone-call.png" class="icons">
+                            <img src="../images/phone-call.png" class="icons" style="margin-top: 0px;">
                             <input type="text" name="phone" id="phone" placeholder="Mobile Number">
                             <span id="errorPhone"></span>
                             <span id="PhoneCorrect"></span>
                         </div>
                         
                     </div>
-                    <div class="dateandpost" style="align-items: center;">
+                    <div style="margin: auto; padding: 0;">
+                        <img src="../images/calendar.png" class="icons">
+                    </div>
+                    <div class="dateandpost" style="margin: auto; display: flex; align-items: center;">
                         <div class="date">
-                            <img src="../images/calendar.png" class="icons">
                             <fieldset>
                                 <legend>Date Of Birth</legend>
                                 <input type="date" name="date1" id="date1">
-                                
                             </fieldset>
                         </div>
-                        <div class="post">
-                            <img src="../images/web.png" class="icons">
+                        <div class="post" style="align-items: center; justify-content: center;">
+                            <img src="../images/web.png" class="icons" style="margin-top: 0px;">
                             <input type="text" name="post1" id="post1" placeholder="Post Code">
                             <span id="errorpostcode"></span>
                             <span id="PostCodeCorrect"></span>
                         </div>
                     </div>
-                    <div class="emailandflyer" style="align-items: center;">
+                    <div style="margin: auto; padding: 0;">
+                        <img src="../images/email.png" class="icons">
+                    </div>
+                    <div class="emailandflyer" style="margin: auto; display: flex; align-items: center;">
                         <div class="email">
-                            <img src="../images/email.png" class="icons">
                             <fieldset>
                                 <legend>Your Email</legend>
                                 <input type="email" name="email1" id="email1" placeholder="youinfo@gmail.com">
@@ -123,7 +133,7 @@
                             </fieldset>
                         </div>
                         <div class="flyer">
-                            <img src="../images/star.png" class="icons">
+                            <img src="../images/star.png" class="icons" style="margin-top: 0px;">
                             <input type="text" name="flyer1" id="flyer1" placeholder="Flyer Number">
                             <span id="errorflyernum"></span>
                             <span id="FlyerNumCorrect"></span>
@@ -150,23 +160,28 @@
             </form>
             <div class="rightside">
                 <h2>Booking Info</h2>
-                <div class="p">
-                    <div class="p1">
-                        <img src="../images/booking_icon01.jpg" class="icon1">
-                        <p id="departureCountry">Dubai</p>
+                <div style="align-items: center; display: flex;">
+                    <div class="" style="display: flex;">
+                        <img src="../images/booking_icon01.jpg"
+                         style="max-height: 40px; border-radius: 5px; margin: 1rem;"
+                         class="">
+                        
                         <!-- <p>12:0(DEK) Dubai</p> -->
                     </div>
+                    <div style="display: flex; justify-content: space-evenly; flex-grow: 2;">
+                        <p id="departureCountry">Dubai</p>
                     <p id="arrivalCountry">Istanbul</p>
+                    </div>
                 </div>
                 <hr>
                 <h3>Select Discount Option</h3>
                 <p class="dash"></p>
                 
 
-                <div class="discount">
+                <div class="discount" style="align-items: center;">
                     <img src="../images/h.png" class="icons">
                     <input type="text" name="code" id="code" placeholder="Enter Code">
-                    <button class="movebtn"><img src="../images/yes-png-39564.png" class="icons"></button>
+                    <button class="movebtn" style="margin-left: 1rem;"><img src="../images/yes-png-39564.png" class="icons"></button>
                 </div>
                 <span id="errordiscount"></span>
                 <span id="DiscountCorrect"></span>

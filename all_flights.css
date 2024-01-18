@@ -60,3 +60,11 @@ main{
     outline: none !important;
     box-shadow: none !important;
 }
+
+.scale-image{
+    transition: transform .6s;
+}
+.scale-image:hover{
+    transform: scale(1.1);
+    /* padding: 40px; */
+}
