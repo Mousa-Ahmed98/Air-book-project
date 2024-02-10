@@ -12,9 +12,11 @@ if(localStorage.getItem("flights") != null){
         element.classList.add('col-2-5', 'border', 'clickable', 'rounded-topp', 'rounded-bottomm',
          'mt-3', 'shadow', 'mr-2', 'p-0','mb-2', 'align-self-start');
         element.style.background = "white";
+        element.style.overflow = "hidden";
+        
 
-        element.innerHTML = `<div class="border rounded-topp innerDiv bac-img" style="background-image: 
-        url(${images[i%5]}); height: 27vh;" onclick="setSelectedFlightId(${i})"></div>
+        element.innerHTML = `<div class="border scale-image rounded-topp innerDiv bac-img" style="background-image: 
+        url(${images[i%5]}); height: 27vh; " onclick="setSelectedFlightId(${i})"></div>
         <h5 class="text-primary m-2">${flights[i].from} To ${flights[i].to}</h5>
         <p class="text-success m-2 mb-3">${flights[i].leavingDate} -- ${flights[i].returnDate}</p>
         <p class="text-success m-2 p-0">Economy from</p>

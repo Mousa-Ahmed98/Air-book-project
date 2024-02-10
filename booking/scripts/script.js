@@ -212,3 +212,4 @@ function storeRegistrationForm()
      localStorage.setItem("tickets", JSON.stringify(tickets));
 
 }
+
